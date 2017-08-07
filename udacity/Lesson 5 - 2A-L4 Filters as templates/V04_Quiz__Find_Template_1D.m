@@ -1,9 +1,7 @@
 % Find Template 1D
 
-%% 
-clear 
-
-% Test code:
+%% Set values to test
+clear
 
 % Index: 5
 s = [-1 0 0 1 1 1 0 -1 -1 0 1 0 0 -1];
@@ -21,6 +19,7 @@ t = [1 1 0];
 % s = [0 0 -1 0 0 1 1 1 0 -1 -1 0 1 0 0 -1];
 % t = [1 1 0];
 
+%% Test code:
 c = normxcorr2(t, s);
 
 disp('Signal:'), disp([1:size(s, 2); s]);
