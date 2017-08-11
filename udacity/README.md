@@ -1,8 +1,7 @@
-# udacity
+# Udacity - Introduction to Computer Vision
 
-Udacity course - Introduction to Computer Vision
+Setup
 
-* Setup
 - The scripts that solves the lessons quizes are using the functions and images that are not at the same folder as the script.
 - All functions are based on 'myLib' folder.
 - All images are based on 'images' folder.
