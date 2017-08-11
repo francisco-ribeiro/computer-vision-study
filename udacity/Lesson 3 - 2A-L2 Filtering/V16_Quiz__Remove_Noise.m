@@ -1,5 +1,5 @@
 % Apply a Gaussian filter to remove noise
-img = imread(getImagePath('saturn.png'));
+img = imread('saturn.png');
 imshow(img);
 % disp(class(img));
 

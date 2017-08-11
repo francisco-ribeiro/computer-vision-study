@@ -1,5 +1,5 @@
 % Color planes
-img = imread(getImagePath('fruit.png'));
+img = imread('fruit.png');
 %imshow(img);
 
 %disp(size(img));

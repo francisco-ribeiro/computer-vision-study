@@ -2,7 +2,7 @@
 % pkg load image;
 
 %% Load an image
-img = imread(getImagePath('fall-leaves.png'));
+img = imread('fall-leaves.png');
 % figure, imshow(img);
 
 %% TODO: Create a Gaussian filter and Apply it, specifying an edge parameter (try different parameters)

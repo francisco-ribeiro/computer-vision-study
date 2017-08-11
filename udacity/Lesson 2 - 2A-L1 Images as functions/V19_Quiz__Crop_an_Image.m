@@ -1,5 +1,5 @@
 % Crop an image
-img = imread(getImagePath('bicycle.png'));
+img = imread('bicycle.png');
 %imshow(img);
 
 %disp(size(img));  % check size

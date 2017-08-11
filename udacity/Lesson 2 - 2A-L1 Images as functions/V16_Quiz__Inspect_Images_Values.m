@@ -1,5 +1,5 @@
 % Inspect image values
-img = imread(getImagePath('dolphin.png'));
+img = imread('dolphin.png');
 imshow(img);
 disp(size(img));
 

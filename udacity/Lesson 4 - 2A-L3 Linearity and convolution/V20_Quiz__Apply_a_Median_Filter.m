@@ -2,7 +2,7 @@
 % pkg load image;
 
 %% Read an image
-img = imread(getImagePath('moon.png'));
+img = imread('moon.png');
 figure, imshow(img);
 
 % Add salt & pepper noise

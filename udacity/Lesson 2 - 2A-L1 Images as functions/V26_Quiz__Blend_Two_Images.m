@@ -1,6 +1,6 @@
 % Test code:
-dolphin = imread(getImagePath('dolphin.png'));
-bicycle = imread(getImagePath('bicycle.png'));
+dolphin = imread('dolphin.png');
+bicycle = imread('bicycle.png');
 
 %result = blend(dolphin, bicycle, 0.95);
 %imshow(result); % note: will result in an error if blend() returns empty or incorrect value

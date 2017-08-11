@@ -8,7 +8,7 @@ clear;
 % t = [1 1 0];
 
 %% Test code:
-tablet = imread(getImagePath('tablet.png'));
+tablet = imread('tablet.png');
 figure, imshow(tablet);
 glyph = tablet(75:165, 150:185);
 figure, imshow(glyph);
