@@ -20,7 +20,7 @@ normalizedCorrelation = normxcorr2(glyph, tablet);
 
 find(normalizedCorrelation == maxValue)
 
-[y x] = find_template_2D(glyph, tablet);
+[y x] = csv_find_template_2D(glyph, tablet);
 % disp([y x]); % should be the top-left corner of template in tablet
 
 % Display matched area

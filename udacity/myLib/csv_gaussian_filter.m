@@ -1,6 +1,6 @@
 %%
 
-function smoothed = gaussianFilter(noisy_img, filter_size, filter_sigma, edgeOption)
+function smoothed = csv_gaussian_filter(noisy_img, filter_size, filter_sigma, edgeOption)
   if nargin < 4
      edgeOption = 'symmetric';
   end

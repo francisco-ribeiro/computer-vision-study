@@ -27,7 +27,7 @@ xoffSet = xpeak - size(onion,2) + 1;
 disp('yoffSet:'), disp([1:size(yoffSet, 1); yoffSet.']);
 disp('xoffSet:'), disp([1:size(xoffSet, 1); xoffSet.']);
 
-[y x] = find_template_2D(onion, peppers);
+[y x] = csv_find_template_2D(onion, peppers);
 disp('y:'), disp(y);
 disp('x:'), disp(x);
 % yoffSet = zeros([1 1]);

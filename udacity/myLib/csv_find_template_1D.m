@@ -1,6 +1,6 @@
 %%
 
-function index = find_template_1D(template, signal)
+function index = csv_find_template_1D(template, signal)
     found = -1;
     
     widthSignal = size(signal, 2);

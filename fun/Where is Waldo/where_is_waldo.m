@@ -6,8 +6,8 @@ whereiswaldo_gray = rgb2gray(whereiswaldo);
 waldo = imread('wallpapers/city/waldo3.jpg');
 waldo_gray = rgb2gray(waldo);
 
-whereiswaldo_gray = unsharpMaskFilter(whereiswaldo_gray);
-waldo_gray = unsharpMaskFilter(waldo_gray);
+% whereiswaldo_gray = csv_unsharp_mask_filter(whereiswaldo_gray);
+% waldo_gray = csv_unsharp_mask_filter(waldo_gray);
 
 matchPrecision = 0.1; % precision as "0.000001" returns 2 peaks; precision as "0.0000001" returns only 1 peak
 padding = 5;

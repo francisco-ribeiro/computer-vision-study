@@ -1,6 +1,6 @@
 %%
 
-function sharped = unsharpMaskFilter(img, edgeOption)
+function sharped = csv_unsharp_mask_filter(img, edgeOption)
   if nargin < 4
      edgeOption = 'symmetric';
   end

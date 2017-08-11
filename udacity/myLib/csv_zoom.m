@@ -1,6 +1,6 @@
 %% Zoom an image by a factor
 
-function output = zoom( img, factor )
+function output = csv_zoom( img, factor )
   originalSize = size(img);
   originalHeight = originalSize(1, 1);
   originalWidth = originalSize(1, 2);

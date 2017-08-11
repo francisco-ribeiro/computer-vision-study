@@ -26,5 +26,5 @@ disp('Signal:'), disp([1:size(s, 2); s]);
 disp('Template:'), disp([1:size(t, 2); t]);
 disp('Correlation:'), disp([1:size(c, 2); c]);
 
-index = find_template_1D(t, s);
+index = csv_find_template_1D(t, s);
 disp('Index:'), disp(index);
