@@ -15,12 +15,12 @@ figure, imshow(noisy_img);
 
 filter_size = 11;
 filter_sigma = 2;
-figure, imshow(csv_gaussian_filter(noisy_img, filter_size, filter_sigma));
+figure, imshow(cvs_gaussian_filter(noisy_img, filter_size, filter_sigma));
 
 filter_size = 31;
 filter_sigma = 2;
-figure, imshow(csv_gaussian_filter(noisy_img, filter_size, filter_sigma));
+figure, imshow(cvs_gaussian_filter(noisy_img, filter_size, filter_sigma));
 
 filter_size = 31;
 filter_sigma = 5;
-figure, imshow(csv_gaussian_filter(noisy_img, filter_size, filter_sigma));
+figure, imshow(cvs_gaussian_filter(noisy_img, filter_size, filter_sigma));

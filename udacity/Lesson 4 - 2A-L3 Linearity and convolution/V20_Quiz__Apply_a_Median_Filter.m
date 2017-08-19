@@ -16,26 +16,26 @@ figure, imshow(median_filtered);
 % Apply a gaussian filter
 filter_size = 11;
 filter_sigma = 2;
-gaussian_filtered = csv_gaussian_filter(noisy_img, filter_size, filter_sigma);
+gaussian_filtered = cvs_gaussian_filter(noisy_img, filter_size, filter_sigma);
 figure, imshow(gaussian_filtered);
 
 % Analyse a line of the original image
-[originalLine, originalImgWithLine] = csv_center_line(csv_matrix_mask_crop(img, [2 1], [2 1]));
+[originalLine, originalImgWithLine] = cvs_center_line(cvs_matrix_mask_crop(img, [2 1], [2 1]));
 figure, imshow(originalImgWithLine);
 originalLine(:, 1) = 300;
 figure, plot(originalLine);
 
 % Analyse a line of the noisy image
-[noisyLine, noisyImgWithLine] = csv_center_line(csv_matrix_mask_crop(noisy_img, [2 1], [2 1]));
+[noisyLine, noisyImgWithLine] = cvs_center_line(cvs_matrix_mask_crop(noisy_img, [2 1], [2 1]));
 noisyLine(:, 1) = 300;
 figure, plot(noisyLine);
 
 % Analyse a line of the median-filtered image
-[filteredLine, filteredImgWithLine] = csv_center_line(csv_matrix_mask_crop(median_filtered, [2 1], [2 1]));
+[filteredLine, filteredImgWithLine] = cvs_center_line(cvs_matrix_mask_crop(median_filtered, [2 1], [2 1]));
 filteredLine(:, 1) = 300;
 figure, plot(filteredLine);
 
 % Analyse a line of the gaussian-filtered image
-[gaussianfilteredLine, gaussianfilteredImgWithLine] = csv_center_line(csv_matrix_mask_crop(gaussian_filtered, [2 1], [2 1]));
+[gaussianfilteredLine, gaussianfilteredImgWithLine] = cvs_center_line(cvs_matrix_mask_crop(gaussian_filtered, [2 1], [2 1]));
 gaussianfilteredLine(:, 1) = 300;
 figure, plot(gaussianfilteredLine);

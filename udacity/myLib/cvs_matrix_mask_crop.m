@@ -1,6 +1,6 @@
 %%
 
-function output = csv_matrix_mask_crop(img, matrixMaskSize, matrixCellToCropCoordinates)
+function output = cvs_matrix_mask_crop(img, matrixMaskSize, matrixCellToCropCoordinates)
     imgSize = size(img);
     
     imgHeight = imgSize(1,1);

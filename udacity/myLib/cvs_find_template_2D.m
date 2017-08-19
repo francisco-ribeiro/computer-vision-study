@@ -1,6 +1,6 @@
 %%
 
-function [yIndex xIndex] = csv_find_template_2D(template, img)
+function [yIndex xIndex] = cvs_find_template_2D(template, img)
     matchPrecision = 0.000001; % precision as "0.000001" returns 2 peaks; precision as "0.0000001" returns only 1 peak
 
     normalizedCorrelation = normxcorr2(template, img);
@@ -15,7 +15,7 @@ function [yIndex xIndex] = csv_find_template_2D(template, img)
     % - how to calculate the error: scalar sum of absolute difference
     differences = zeros(size(yoffSet));
     for i=1:size(yoffSet,1)
-        differences(i, 1) = csv_absolute_difference_error(template, img(yoffSet(i, 1):yoffSet(i,1)+size(template, 1)-1, xoffSet(i,1):xoffSet(i,1)+size(template, 2)-1));
+        differences(i, 1) = cvs_absolute_difference_error(template, img(yoffSet(i, 1):yoffSet(i,1)+size(template, 1)-1, xoffSet(i,1):xoffSet(i,1)+size(template, 2)-1));
     end
     
     [minValue rawIndex] = min(differences(:));
